@@ -1,0 +1,128 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0wgox5shq4s2"]
+
+[ext_resource type="Script" uid="uid://chltblvabroym" path="res://addons/calculator_button/assets/calculator.gd" id="1_8tcpy"]
+[ext_resource type="Script" uid="uid://c14vkj54gjxwe" path="res://addons/calculator_button/assets/input_display.gd" id="2_cgn15"]
+
+[node name="Calculator" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8tcpy")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -67.5
+offset_right = 40.0
+offset_bottom = 67.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="InputDisplay" type="LineEdit" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 2
+context_menu_enabled = false
+emoji_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+script = ExtResource("2_cgn15")
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="7Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "7"
+
+[node name="8Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "8"
+
+[node name="9Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "9"
+
+[node name="+Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "+"
+
+[node name="4Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "4"
+
+[node name="5Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "5"
+
+[node name="6Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "6"
+
+[node name="-Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "-"
+
+[node name="1Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "1"
+
+[node name="2Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "2"
+
+[node name="3Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "3"
+
+[node name="*Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "*"
+
+[node name="CButton" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "C"
+
+[node name="0Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "0"
+
+[node name="=Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "="
+
+[node name="_Button" type="Button" parent="PanelContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+text = "/"
